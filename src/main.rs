@@ -34,7 +34,6 @@ fn main() {
                 .about("Run a persistent Nym client process")
                 .arg(
                     Arg::with_name("customCfg")
-                        .short("cfg")
                         .long("customCfg")
                         .help("Path to custom configuration file of the client")
                         .takes_value(true)
@@ -45,14 +44,12 @@ fn main() {
                 .about("Run a background Nym client listening on a specified socket")
                 .arg(
                     Arg::with_name("customCfg")
-                        .short("cfg")
                         .long("customCfg")
                         .help("Path to custom configuration file of the client")
                         .takes_value(true)
                 )
                 .arg(
                     Arg::with_name("socketType")
-                        .short("s")
                         .long("socketType")
                         .help("Type of the socket we want to run on (tcp / websocket)")
                         .takes_value(true)
@@ -60,7 +57,6 @@ fn main() {
                 )
                 .arg(
                     Arg::with_name("port")
-                        .short("p")
                         .long("port")
                         .help("Port to listen on")
                         .takes_value(true)
