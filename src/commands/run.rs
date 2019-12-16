@@ -16,7 +16,6 @@ use tokio::time::{interval_at, Instant};
 
 pub fn execute(matches: &ArgMatches) {
     let is_local = matches.is_present("local");
-    println!("Starting client, local: {:?}", is_local);
 
     // Grab the network topology from the remote directory server
     let topology = get_topology(is_local);

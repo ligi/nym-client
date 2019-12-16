@@ -32,7 +32,7 @@ fn main() {
                 .about("Run a persistent Nym client process")
                 .arg(Arg::with_name("local")
                     .long("local")
-                    .help("Flag to indicate whether the client is expected to run on the local deployment.")
+                    .help("Flag to indicate whether the client is expected to run on a local deployment.")
                     .takes_value(false)
                 )
         )
