@@ -27,14 +27,6 @@ const LOOP_COVER_AVERAGE_DELAY: f64 = 10.0; // seconds
 const MESSAGE_SENDING_AVERAGE_DELAY: f64 = 1.0; //  seconds;
 const FETCH_MESSAGES_DELAY: f64 = 1.0; // seconds;
 
-// provider-poller sends polls service provider; receives messages
-// provider-poller sends (TX) to ReceivedBufferController (RX)
-// ReceivedBufferController sends (TX) to ... ??Client??
-// outQueueController sends (TX) to TrafficStreamController (RX)
-// TrafficStreamController sends messages to mixnet
-// ... ??Client?? sends (TX) to outQueueController (RX)
-// Loop cover traffic stream just sends messages to mixnet without any channel communication
-
 struct MixMessage(NodeAddressBytes, SphinxPacket);
 
 struct MixTrafficController;
